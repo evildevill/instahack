@@ -67,7 +67,7 @@ $ bash instahack.sh
 * Open new session and start TOR (tor) before starting the attack
 
 ## 📌 ***Screenshot*** :
-![Screenshot_2020-06-22-22-03-35-080_com termux](https://user-images.githubusercontent.com/49580304/85359279-6b841800-b533-11ea-8e27-1e7c3bfc882e.jpg)
+
 
 ## 📌 ***Full video tutorial***:
 
