@@ -14,7 +14,7 @@ pink='\033[1;35m'
 #coding section starts :)
 clear
 echo 
-echo '_                 _   
+echo '                    _                 _   
  o                       | |               | |  
      _  _    , _|_  __,  | |     __,   __  | |  
  |  / |/ |  / \_|  /  |  |/ \   /  |  /    |/_) 
@@ -36,16 +36,16 @@ read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose an option: \e[0m' optio
 
 
 if [[ $option == 1 || $option == 01 ]]; then
-cd $HOME/ighack/main
+cd $HOME/instahack/main
 bash auto.sh
 elif [[ $option == 2 || $option == 02 ]]; then
-cd $HOME/ighack/main
+cd $HOME/instahack/main
 bash manual.sh
 elif [[ $option == 3 || $option == 03 ]]; then
-cd $HOME/ighack/core
+cd $HOME/instahack/core
 bash about.sh
 elif [[ $option == 4 || $option == 04 ]]; then                                                                                                                
-cd $HOME/ighack/core
+cd $HOME/instahack/core
 bash update.sh
 elif [[ $option == 5 ]]; then
 exit 1
