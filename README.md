@@ -14,7 +14,7 @@ INSTA is a bash based script which is officially made to test password strength 
 [![Stage](https://img.shields.io/badge/Release-Stable-brightgreen.svg)]()
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-![Screenshot_2020-06-22-18-53-12-214_com termux](https://user-images.githubusercontent.com/49580304/85358677-f8c66d00-b531-11ea-8f38-c9e298551a9c.jpg)
+![Screenshot](https://pin.it/5e1DqqG)
 
 
 ### 📌 ***Insta-Hack is available for***:
