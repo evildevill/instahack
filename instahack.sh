@@ -39,7 +39,7 @@ if [[ $option == 1 || $option == 01 ]]; then
 cd $HOME/instahack/main
 bash auto.sh
 elif [[ $option == 2 || $option == 02 ]]; then
-cd $HOME/instahack/main
+cd $HOME/instahack/patatessht
 bash manual.sh
 elif [[ $option == 3 || $option == 03 ]]; then
 cd $HOME/instahack/core
