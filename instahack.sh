@@ -1,5 +1,5 @@
 #bin/bash
-#script By Evil Devil
+#script By WaSeem Akram
 #Dont copy this script or dont try to modify this
 #script is the subject of copyright
 #colours
@@ -21,7 +21,7 @@ echo '                    _                 _
  |_/  |  |_/ \/ |_/\_/|_/|   |_/\_/|_/\___/| \_/
 ' |lolcat
 printf "\n"
-printf "                \e[101m\e[1;77m  >>  Script By EvilDevil W A S I << \e[0m\n"
+printf "                \e[101m\e[1;77m  >>  Script By WaSeem Akram << \e[0m\n"
 printf "\n"
 printf "  \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m youtube.com/Hackerwasi \e[100m\e[1;77m << \e[0m\n"
 printf "\n"
