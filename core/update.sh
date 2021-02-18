@@ -1,48 +1,109 @@
-#colour section
-red='\033[1;31m'
-rset='\033[0m'
-grn='\033[1;32m'
-ylo='\033[1;33m'
-#script coding starts
+cd $HOME/instahack/core/                                                                                     
+update(){                                                                                                             
+if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/update.v1.3 2>/dev/null; then
+cd $HOME/instahack/core
+rm *.txt
+echo "ig" > update.txt
+else
 clear
-echo " "
-echo " "
-echo '
-                  _  _  ___  ___   __  ____  ___ 
-                 ( )( )(  ,\(   \ (  )(_  _)(  _)
-                  )()(  ) _/ ) ) )/__\  )(   ) _)
-                  \__/ (_)  (___/(_)(_)(__) (___) v 1.0
-'|lolcat
-echo " "
-echo " "
-sleep 6.0
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo -e "\e[92m          INSTAHACK UPDATED V1.2 \e[91mNO UPDATES AVAILABLE FOR NOW...!\e[92m\e[0m"
+echo -e "\e[96m                ╔═══════════════════════════════════╗\e[0m"
+echo -e "\e[96m                ║       \e[93mIInstaHacke[96m Uptodate\e[93m V1.2\e[96m        ║\e[0m"
+echo -e "\e[96m                ║        No Updates \e[93mRolled Out\e[96m      ║\e[0m"
+echo -e "\e[96m                ║                                   ║\e[0m"
+echo -e "\e[96m                ╚═══════════════════════════════════╝\e[0m"
+echo
+echo
+echo
+echo
+echo
+sleep 5.0
+cd $HOME/instahack
+bash instahack.sh
+fi
+}
+update
+ 
+option(){
+if [ -f "$HOME/instahack/core/update.txt" ];then
+$dbox
+else
+echo
+fi
+}
+option
+ 
+dbox(){
 clear
-echo -e "$red                         ChEcKiNg..>$rset"
-sleep 2.0
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo -e "\e[92m                 INSTAHACK NEW UPDATE V1.3 IS AVAILABLE\e[0m"
+echo -e "\e[96m                ╔═══════════════════════════════════╗\e[0m"
+echo -e "\e[96m                ║  \e[93mINSTAhack\e[96m Update Is avaialbe\e[93m V1.3\e[96m   ║\e[0m"
+echo -e "\e[96m                ║    To Update The \e[93mInstahack\e[96m Tool      ║\e[0m"
+echo -e "\e[96m                ║                                   ║\e[0m"
+echo -e "\e[96m                ║         Select \e[92my\e[96m to update\e[96m        ║\e[0m"
+echo -e "\e[96m                ║                (\e[93mOR\e[96m)               \e[96m║\e[0m"
+echo -e "\e[96m                ║        Select \e[91mt\e[96m to terminate\e[96m      ║\e[0m"
+echo -e "\e[96m                ╚═══════════════════════════════════╝\e[0m"
+echo
+echo
+echo
+echo
+echo
+echo -en "\e[32mSELECT OPTION [\e[93my/\e[93mt\e[32m]\e[96m: \e[0m "
+read updater
+if [[ $updater = y ]];then
 clear
-echo -e "$red                         ChEcKiNg...>$rset"
-sleep 2.0
-clear
-echo -e "$red                         ChEcKiNg....>$rset"
-sleep 2.0
-clear
-echo -e "$red                         ChEcKiNg.....>$rset"
-sleep 2.0
-clear
-echo " "
-echo " "
-echo -e "$grn                updating the InstaHack please wait$rset"
-sleep 2.0
+sleep 0.5
 cd $HOME
 rm -rf instahack
-git clone https://github.com/evildevill/instahack
-clear
-echo " "
-echo -e "$grn               InstaHack has been updated check it now...$rset"
-sleep 3.0
-echo " "
+echo
 cd $HOME
-cd instahack
-bash instahack.sh
+sleep 1
+echo -e "         \e[96mUPDATE IS GOING ON, PLEASE WAIT FOR A WHILE...!\e[0m"
+echo
+printf "                     \e[96m["
+# While process is running...
+while git clone https://github.com/evildevill/instahack 2> /dev/null; do 
+    printf  "\e[92m▓▓▓▓▓▓▓▓▓▓▓▓▓\e[0m"
+    sleep 1
+done
+printf "\e[96m]\e[0m"
+echo
+echo
+echo
+printf "\e[96m                  UPDATE SUCCESSFULL (v1.3)..!\e[0m"
+sleep 2.0
+cd $HOME/instahack
+bash setup.sh
+elif [ $updater = t ];then
 clear
-sleep 1.0
+echo -e "                   \e[96mUPDATE TERMINATED......!\e[0m"
+sleep 4.0
+cd $HOME/instahack
+bash instahack.sh
+else
+clear
+echo -e "                   \e[96mREBOOTING INSTAHACK......!\e[0m"
+sleep 4.0
+cd $HOME/instahack
+bash instahack.sh
+echo
+fi
+}
+dbox
