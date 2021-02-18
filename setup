@@ -1,26 +1,43 @@
 #bin/bash
 clear
-echo
-echo "        Setting up first time installation.....!"
-echo
+center() {
+  termwidth=$(stty size | cut -d" " -f2)
+  padding="$(printf '%0.1s' ={1..500})"
+  printf '%*.*s %s %*.*s\n' 0 "$(((termwidth-2-${#1})/2))" "$padding" "$1" 0 "$(((termwidth-1-${#1})/2))" "$padding"
+}
+echo -e "\e[92m      
+  _____ _   _ _    _          _____ _  __
+ |_   _| \ | | |  | |   /\   / ____| |/ /
+   | | |  \| | |__| |  /  \ | |    | ' / 
+   | | | . ` |  __  | / /\ \| |    |  <  
+  _| |_| |\  | |  | |/ ____ \ |____| . \ 
+ |_____|_| \_|_|  |_/_/    \_\_____|_|\_SETUP
+"
+echo -e "\e[93m"
+center "INSTALLATION PROCESS"
+echo -e "\e[34mINSTALLING PACKAGES.....WAIT\e[0m"
 cd $HOME
-pkg install python -y
-pkg install python2 -y
-pkg install tor -y
-pkg install git -y
-pkg install wget -y
-pip install lolcat
-pip install --upgrade pip
-pip3 install requests --upgrade
-pip3 install requests[socks]
-pip3 install stem
-pip3 install instagram-py
-cd $HOME
-wget -O ~/instapy-config.json "https://git.io/v5DGy"
+pkg install python -y >/dev/null 2>&1
+pkg install python2 -y >/dev/null 2>&1
+pkg install tor -y >/dev/null 2>&1
+pkg install git -y >/dev/null 2>&1
+pkg install wget -y >/dev/null 2>&1
+pip install lolcat >/dev/null 2>&1
+echo -e "\e[34mINSTALLING CORE FILES.....WAIT\e[0m"
+pip install --upgrade pip >/dev/null 2>&1
+pip3 install requests --upgrade >/dev/null 2>&1
+pip3 install requests[socks] >/dev/null 2>&1
+pip3 install stem >/dev/null 2>&1
+pip3 install instagram-py >/dev/null 2>&1
+echo -e "\e[34mSETTING UP SERVERS.....WAIT\e[0m"
+cd $HOME >/dev/null 2>&1
+wget -O ~/instapy-config.json "https://git.io/v5DGy" >/dev/null 2>&1
+cd $HOME/instahack >/dev/null 2>&1
+cd /data/data/com.termux/files/usr/etc/tor >/dev/null 2>&1
+rm torrc >/dev/null 2>&1
+cd $HOME/instahack >/dev/null 2>&1
+mv torrc /data/data/com.termux/files/usr/etc/tor >/dev/null 2>&1
+echo -e "\e[34mALL THINGS ARE COMPLETED....[\e[92m✓\e[34m]\e[93m"
+center "STARTING INSTAHACK"
 cd $HOME/instahack
-cd /data/data/com.termux/files/usr/etc/tor
-rm torrc
-cd $HOME/instahack
-mv torrc /data/data/com.termux/files/usr/etc/tor
-cd $HOME
-tor
+bash instahack.sh
