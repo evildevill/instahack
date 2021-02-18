@@ -10,7 +10,7 @@ echo '
                                                  
 ' | lolcat
 echo " "
-echo "                             About"|lolcat
+echo "                             About us"|lolcat
 echo " "
 echo "       🙏 Hey, there I am MUHAMMAD WASIM AKRAM (W A S I), i made this tool
   to penetrate password strength In termux, so i hope guys you
@@ -19,6 +19,6 @@ echo ""
 echo "                  Our channel :- Hacker wasi"| lolcat
 echo " "
 
-sleep 5.0
+sleep 8.0
 cd $HOME/instahack
 bash instahack.sh
