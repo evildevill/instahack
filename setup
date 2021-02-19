@@ -6,12 +6,7 @@ center() {
   printf '%*.*s %s %*.*s\n' 0 "$(((termwidth-2-${#1})/2))" "$padding" "$1" 0 "$(((termwidth-1-${#1})/2))" "$padding"
 }
 echo -e "\e[92m      
-  _____ _   _ _    _          _____ _  __
- |_   _| \ | | |  | |   /\   / ____| |/ /
-   | | |  \| | |__| |  /  \ | |    | ' / 
-   | | | . ` |  __  | / /\ \| |    |  <  
-  _| |_| |\  | |  | |/ ____ \ |____| . \ 
- |_____|_| \_|_|  |_/_/    \_\_____|_|\_SETUP
+  STARTING SETUP OF INSTAHACK
 "
 echo -e "\e[93m"
 center "INSTALLATION PROCESS"
