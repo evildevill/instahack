@@ -52,7 +52,7 @@ echo
 torser="tor"
 if pgrep -x "$torser" >/dev/null
 then
-# echo#do nothing
+echo#do nothing
 else
 echo -e "\e[91mTOR\e[96m IS NOT RUNNING, PLEASE START TOR IN A NEW SESSION
           BY TYPING\e[92m tor\e[96m AND START instahack AGAIN\e[0m "
