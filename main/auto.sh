@@ -7,24 +7,24 @@ ylo='\033[1;33m'
 #coding section starts :)
 clear
 echo
-echo '                    _                 _   
- o                       | |               | |  
-     _  _    , _|_  __,  | |     __,   __  | |  
- |  / |/ |  / \_|  /  |  |/ \   /  |  /    |/_) 
- |_/  |  |_/ \/ |_/\_/|_/|   |_/\_/|_/\___/| \_/
-            [#] Auto Password Attack [#]
+echo '
+ ____  _  _  ___  ____   __    _   _    __    ___  _  _ 
+(_  _)( \( )/ __)(_  _) /__\  ( )_( )  /__\  / __)( )/ )
+ _)(_  )  ( \__ \  )(  /(__)\  ) _ (  /(__)\( (__  )  ( 
+(____)(_)\_)(___/ (__)(__)(__)(_) (_)(__)(__)\___)(_)\_)
+                [#] Auto Password Attack [#]
 ' |lolcat
 printf "\n"
-printf "                \e[101m\e[1;77m  >>  Script By EvilDevil W A S I << \e[0m\n"
+printf "                \e[101m\e[1;77m  >>  Script By WASII << \e[0m\n"
 printf "\n"
-printf "  \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m youtube.com/Hackerwasi \e[100m\e[1;77m << \e[0m\n"
+printf "       \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m Hacker wasii \e[100m\e[1;77m << \e[0m\n"
 printf "\n"
 echo
 read -p "[#] User Name : " usrnm
 echo
 echo -e "$grn              [+]$red Type$ylo 1$red FOR 1k Passwords$grn
               [+]$red Type$ylo 2$red FOR 10K Passwords$grn
-              [+]$red Type$ylo 3$red FOR 1Million Passwords $rset"
+              [+]$red Type$ylo 3$red FOR 1M Passwords $rset"
 echo
 read -p "[#] Enter Selected Number: " marks
 echo 
