@@ -52,7 +52,7 @@ echo
 torser="tor"
 if pgrep -x "$torser" >/dev/null
 then
-echo#do nothing
+# echo#do nothing
 else
 echo -e "\e[91mTOR\e[96m IS NOT RUNNING, PLEASE START TOR IN A NEW SESSION
           BY TYPING\e[92m tor\e[96m AND START instahack AGAIN\e[0m "
@@ -107,8 +107,8 @@ exit 1
 else
 echo
 printf "\e[1;93m [>!<] Invalid Selection!\e[0m\n"
-sleep 1
+sleep 0.6
 echo
-fi
+clear
 exit
-esac
+bash instahack.sh
