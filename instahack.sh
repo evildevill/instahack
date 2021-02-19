@@ -109,6 +109,6 @@ echo
 printf "\e[1;93m [>!<] Invalid Selection!\e[0m\n"
 sleep 0.6
 echo
-clear
+fi
 exit
-bash instahack.sh
+esac
