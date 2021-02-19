@@ -1,65 +1,121 @@
-<h1 align="center">INSTA-HACK v1.0</h1>
 <p align="center">
-      A new automated script for Instagram Account hackig from bruteforce
+<a href="https://instagram.com/blckspidr"><img title="Made in Pakistan" src="https://img.shields.io/badge/MADE%20IN-PakistN-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
+</p>
+<p align="center">
+<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="Made in INDIA" src="https://img.shields.io/badge/Tool-instahack-green.svg"></a>
+<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="Version" src="https://img.shields.io/badge/Version-1.0-green.svg?style=flat-square"></a>
+<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="Maintainence" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
+</p>
+<p align="center">
+<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="instahack" src="https://user-images.githubusercontent.com/49580304/96563916-5f0c9380-1277-11eb-814f-88de938d67a7.jpg"></a>
+</p>
+<p align="center">
+<a href="https://github.com/evildevill"><img title="Github" src="https://img.shields.io/badge/evildevill-brightgreen?style=for-the-badge&logo=github"></a>
+<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Noob Hackers-red?style=for-the-badge&logo=Youtube"></a>
+</p>
+<p align="center">
+<a href="https://github.com/evildevill"><img title="Language" src="https://img.shields.io/badge/Made%20with-Bash-1f425f.svg?v=103"></a>
+<a href="https://github.com/evildevill"><img title="Followers" src="https://img.shields.io/github/followers/evildevill?color=blue&style=flat-square"></a>
+<a href="https://github.com/evildevill"><img title="Stars" src="https://img.shields.io/github/stars/evildevill/instahack?color=red&style=flat-square"></a>
+<a href="https://github.com/evildevill"><img title="Forks" src="https://img.shields.io/github/forks/evildevill/instahack?color=red&style=flat-square"></a>
+<a href="https://github.com/evildevill"><img title="Watching" src="https://img.shields.io/github/watchers/evildevill/instahack?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/evildevill"><img title="Licence" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
 
-## 🔍 ***About INSTA-HACK***:
+## ABOUT TOOL :
 
-INSTA is a bash based script which is officially made to test password strength of instagram account from termux with bruteforce attack and. This tool works on both rooted Android device and Non-rooted Android device.
+instahack is a bash based script which is officially made to test password strength of instagram account from termux with bruteforce attack and. This tool works on both rooted Android device and Non-rooted Android device.
 
-[![Build Status](https://img.shields.io/github/stars/noob-hackers/ighack.svg)](https://github.com/evildevill/instahack)
-[![Build Status](https://img.shields.io/github/forks/noob-hackers/ighack.svg)](https://github.com/evildevill/instahack)
-[![License: MIT](https://img.shields.io/github/license/noob-hackers/ighack.svg)](https://github.com/evildevill/instahack)
-[![Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/img/badges/Rawsec-inventoried-FF5050_flat.svg)](https://inventory.rawsec.ml/tools.html#instahack)
-[![Stage](https://img.shields.io/badge/Release-Stable-brightgreen.svg)]()
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-
-![Screenshot](https://pin.it/5e1DqqG)
-
-
-### 📌 ***Insta-Hack is available for***:
+## AVAILABLE ON :
 
 * Termux
 
-### 📌 ***Installation and usage guide***:
+### TESTED ON :
+
+* Termux
+
+### REQUIREMENTS :
+* internet
+* php
+* storage 400 MB
+* ngrok Token
+
+## FEATURES :
+* [+] Instagram stable api !
+* [+] Updated maintainence !
+* [+] tor usage !
+* [+] Easy for Beginners !
+
+## INSTALLATION [Termux] :
+
+* `apt-get update -y`
+* `apt-get upgrade -y`
+* `pkg install python -y`
+* `pkg install python2 -y`
+* `pkg install git -y`
+* `pip install lolcat`
+* `git clone https://github.com/evildevill/instahack`
+* `cd $HOME`
+* `ls`
+* `cd instahack`
+* `ls`
+* `bash setup`
+* `bash instahack.sh`
 ```
-$ apt-get update -y
-$ apt-get upgrade -y
-$ pkg install python -y 
-$ pkg install python2 -y
-$ pkg install git -y
-$ pip install lolcat
-$ git clone https://github.com/evildevill/instahack
-$ ls
-$ cd instahack
-$ ls
-$ bash setup
-$ bash instahack.sh
+[+]--Now you need internet connection to continue further process...
+
+[+]--You can select any option by clicking on your keyboard
+
+[+]--Note:- Don't delete any of the scripts included in core files
+
+[+]--new session and start TOR (tor) before starting the attack
 ```
-* Now you need internet connection to continue further process...
+## USAGE OPTIONS [Termux] :
 
-* You can select any option by clicking on your keyboard
+__AUTO ATTACK__ :
+- From this option you can start attack aon default pass list of tool.
 
-* Note:- Don't delete any of the scripts included in core files
+__MANUAL ATTACK__ :
+- From this option you can select manual pass list and try to attack.
 
-* Open new session and start TOR (tor) before starting the attack
+__ABOUT__ :
+- From this option you can know more about author.
+
+__UPDATE__ :
+- From this option you can update instahack tool if updates are available for that.
+
+__EXIT__ :
+- From this option you can exit from tool 
+
+## SCREEN SHOTS [Termux]
+
+<br>
+<p align="center">
+<img width="50%" src=""/>
+<img width="45%" src=""/>
+</p>
+
+## WATCH VIDEO [Termux]
 
 
-### Subscribe our channel on youtube:
-https://www.youtube.com/Hackerwasi
 
-### Chekout our webite:
-https://hackerwasii.blogspot.com
+## CONNECT WITH US :
 
-### Instagram: 
-https://www.instagram.com/__empty254__
+[![Messenger](https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger)](https://m.me/hackerwasiii)
+<a href="https://github.com/evildevill"><img title="Github" src="https://img.shields.io/badge/evildevill-brightgreen?style=for-the-badge&logo=github"></a>
+[![Instagram](https://img.shields.io/badge/INSTAGRAM-FOLLOW-red?style=for-the-badge&logo=instagram)](https://instagram.com/blckspidr)
+[![Instagram](https://img.shields.io/badge/WEBSITE-VISIT-yellow?style=for-the-badge&logo=blogger)](https://hackerwaaii.blogspot.com)
+[![Instagram](https://img.shields.io/badge/LINKEDIN-CONNECT-red?style=for-the-badge&logo=linkedin)](https://linkedin/hackerwasii)
+[![Instagram](https://img.shields.io/badge/FACEBOOK-LIKE-red?style=for-the-badge&logo=facebook)](https://facebook.com/StanicDevil)
+[![Instagram](https://img.shields.io/badge/TELEGRAM-CHANNEL-red?style=for-the-badge&logo=telegram)](https://t.me/blckspidr)
+[![Instagram](https://img.shields.io/badge/WHATSAPP-JOINGROUP-red?style=for-the-badge&logo=whatsapp)](https://wa.me/923137119351)
+<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Hacker wasi-red?style=for-the-badge&logo=Youtube"></a>
 
-### Pinterest:
-https://in.pinterest.com/EvilDevil
+## BUY ME A COFFEE :
 
-### My GitHub ID link:
-https://www.github.com/evildevill
+<p align="center">
+<a href="https://paypal.com/hackerwasii"><img title="evildevill" src="https://camo.githubusercontent.com/ae8af018f80649f3d379eb23dbf59acceaffa24e/68747470733a2f2f6c69626572617061792e636f6d2f6173736574732f776964676574732f646f6e6174652e737667"></a>
+</p>
 
-### 📢 Warning
-
+## WARNING : 
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
