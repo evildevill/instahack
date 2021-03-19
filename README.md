@@ -36,6 +36,7 @@ instahack is a bash based script which is officially made to test password stren
 
 ### REQUIREMENTS :
 * internet
+* Root Device
 * php
 * storage 400 MB
 * ngrok Token
@@ -104,7 +105,7 @@ __EXIT__ :
 [![Messenger](https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger)](https://m.me/hackerwasiii)
 <a href="https://github.com/evildevill"><img title="Github" src="https://img.shields.io/badge/evildevill-brightgreen?style=for-the-badge&logo=github"></a>
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-FOLLOW-red?style=for-the-badge&logo=instagram)](https://instagram.com/blckspidr)
-[![Instagram](https://img.shields.io/badge/WEBSITE-VISIT-yellow?style=for-the-badge&logo=blogger)](https://hackerwaaii.blogspot.com)
+[![Instagram](https://img.shields.io/badge/WEBSITE-VISIT-yellow?style=for-the-badge&logo=blogger)](https://hackerwasii.blogspot.com)
 [![Instagram](https://img.shields.io/badge/LINKEDIN-CONNECT-red?style=for-the-badge&logo=linkedin)](https://linkedin/hackerwasii)
 [![Instagram](https://img.shields.io/badge/FACEBOOK-LIKE-red?style=for-the-badge&logo=facebook)](https://facebook.com/StanicDevil)
 [![Instagram](https://img.shields.io/badge/TELEGRAM-CHANNEL-red?style=for-the-badge&logo=telegram)](https://t.me/blckspidr)
