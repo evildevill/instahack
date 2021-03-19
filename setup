@@ -5,9 +5,16 @@ center() {
   padding="$(printf '%0.1s' ={1..500})"
   printf '%*.*s %s %*.*s\n' 0 "$(((termwidth-2-${#1})/2))" "$padding" "$1" 0 "$(((termwidth-1-${#1})/2))" "$padding"
 }
-echo -e "\e[92m      
+echo -e "\e[92m
   STARTING SETUP OF INSTAHACK
 "
+dir=instahack
+if [ -d "$dir" ]; then
+rm -r instahack
+git clone https://github.com/evildevill/instahack.git >/dev/null 2>&1
+else
+git clone https://github.com/evildevill/instahack.git >/dev/null 2>&1
+fi
 echo -e "\e[93m"
 center "INSTALLATION PROCESS"
 echo -e "\e[34mINSTALLING PACKAGES.....WAIT\e[0m"
