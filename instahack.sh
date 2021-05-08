@@ -97,11 +97,11 @@ elif [[ $option == 4 || $option == 04 ]]; then
 cd $HOME/instahack/core
 bash update.sh
 elif [[ $option == 5 || $option == 05 ]]; then
-am start -a android.intent.action.VIEW -d https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ
+am start -a android.intent.action.VIEW -d https://youtube.com/channel/HackerWasii > /dev/null 2>&1
 elif [[ $option == 6 || $option == 06 ]]; then
-am start -a android.intent.action.VIEW -d https://wa.me/923137119351
+am start -a android.intent.action.VIEW -d https://wa.me/923137119351 > /dev/null 2>&1
 elif [[ $option == 7 || $option == 07 ]]; then
-am start -a android.intent.action.VIEW -d https://instagram.com/blckspidr
+am start -a android.intent.action.VIEW -d https://instagram.com/blckspidr > /dev/null 2>&1
 elif [[ $option == 8 ]]; then
 exit 1
 else
