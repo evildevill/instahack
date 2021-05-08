@@ -5,7 +5,7 @@
 #colours
 #####3#3#
 check(){
-if wget --spider https://raw.githubusercontent.com/noob-hackers/instahack/master/update.v1.3 2>/dev/null; then
+if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/update.v1.3 2>/dev/null; then
 cd $HOME/instahack/core
 echo "ig" > update.txt
 else
