@@ -20,7 +20,7 @@ RED="\033[91m"
 GREEN="\033[92m"
 YELLOW="\033[93m"
 BLUE="\033[94m"
-RED_REV="\033[07;92m"
+RED_REV="\033[07;91m"
 DEFCOL="\033[00m"
 
 # The main script starts here
