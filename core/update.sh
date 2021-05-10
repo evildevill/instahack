@@ -77,8 +77,6 @@ if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/u
 		clear
 		echo -e "                   \e[96mUPDATE TERMINATED......!\e[0m"
 		sleep 1.5
-		cd $HOME/instahack
-		bash instahack.sh
 	else
 		# If the user entered option is not recognized, then we display the error message on the console screen and then relaunch the tool
 
@@ -100,6 +98,4 @@ else
 	echo -e "\e[96m                ║                                   ║\e[0m"
 	echo -e "\e[96m                ╚═══════════════════════════════════╝\e[0m\n\n\n\n"
 	sleep 5.0
-	cd $HOME/instahack
-	bash instahack.sh
 fi
