@@ -30,7 +30,7 @@ pink='\033[95m'
 RED_REV="\033[07;91m"
 DEFCOL="\033[00m"
 
-function checkUpdates() {
+function checkUpdates {
 	# The function to check for the updates of the tool, if available any. We will just fetch the version update notice file at the github mirror of this repository (project)
 
 	if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/update.v1.3 2>/dev/null; then
