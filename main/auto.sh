@@ -23,7 +23,6 @@ BLUE="\033[94m"
 RED_REV="\033[07;91m"
 DEFCOL="\033[00m"
 
-# The main script starts here
 
 # Displaying the banner of the tool on the console screen
 clear
