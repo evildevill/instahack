@@ -3,7 +3,7 @@
 #
 # The shell / bash script that gives the user the option for automatic password wordlist selections. The tool provides the user with three wordlist files : 1K password file (pass1.txt), 10K password file (pass2.txt) and the 1M passwords file (pass3.txt). Thus, here the user is not required to create a custom wordlist file of passwords like what the user needs to do when using the manual version of this attack.
 #
-# Author : Wasim Akram (https://github.com/evildevill/)
+# Author : Waseem Akram (https://github.com/evildevill/)
 # Created on : June 28, 2020
 #
 # Last modified by : Rishav Das (https://github.com/rdofficial/)
@@ -36,7 +36,7 @@ echo -e "\n                \e[101m\e[1;77m  >>  Script By WASII << \e[0m\n"
 echo -e "\n       \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m Hacker wasii \e[100m\e[1;77m << \e[0m\n"
 
 # Asking the user to enter the username of the target instagram account
-read -p "[#] Enter the username of the target : " username
+read -p "[#] Enter the username of the target : " usrnm
 
 # Asking the user to enter a choice for the wordlist
 # ----
