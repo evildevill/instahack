@@ -70,7 +70,7 @@ if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/u
 
 		# Moving inside the project's folder and launching the setup of the tool again
 		cd $HOME/instahack
-		bash setup.sh
+		bash setup
 	elif [[ $choice = "t" ]]; then
 		# If the user entered the option to terminate the update
 
