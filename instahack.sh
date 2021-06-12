@@ -33,10 +33,10 @@ DEFCOL="\033[00m"
 function checkUpdates {
 	# The function to check for the updates of the tool, if available any. We will just fetch the version update notice file at the github mirror of this repository (project)
 
-	if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/update.v1.3 2>/dev/null; then
+	if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/update.v1.3 >/dev/null; then
 		# If there exists any updates to this tool, then we mark for the update in the core/update.txt file
 
-		# echo "ig" > $HOME/instahack/core/update.txt
+		# echo "instahack" > $HOME/instahack/core/update.txt
 		# ----
 		# We donot do that shit here, because we dont want to create a waste file for just marking purpose. Lets directly call the update.sh script if there are really any updates to the script
 		# ----
@@ -55,10 +55,10 @@ function checkUpdates {
 	fi
 
 	# Now, checking for updates in the script file
-	if wget --spider https://raw.githubusercontent.com/noob-hackers/patchupdateznh/main/instahack.v.1 2>/dev/null; then
+	if wget --spider https://raw.githubusercontent.com/evildevill/evildevillpatch/main/instahack.v.1.3 >/dev/null; then
 		# If there are updates to the path, then we launch the core/path.sh script file after checking it
 
-		if [[ -f "$HOME/InstaHack/core/patch.txt" ]]; then
+		if [[ -f "$HOME/instaHack/core/patch.txt" ]]; then
 			# If the core/patch.sh script file exists, then we launch it
 
 			bash $HOME/instahack/core/patch.sh
