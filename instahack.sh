@@ -122,7 +122,8 @@ while true; do
 	echo -e "\e[1;92m[\e[0m\e[1;77m5\e[0m\e[1;92m]\e[0m\e[1;93m Subscribe\e[0m"
 	echo -e "\e[1;92m[\e[0m\e[1;77m6\e[0m\e[1;92m]\e[0m\e[1;93m Chat now\e[0m"
 	echo -e "\e[1;92m[\e[0m\e[1;77m7\e[0m\e[1;92m]\e[0m\e[1;93m Follow\e[0m"
-	echo -e "\e[1;92m[\e[0m\e[1;77m0\e[0m\e[1;92m]\e[0m\e[1;93m Exit\e[0m\n"
+	echo -e "\e[1;92m[\e[0m\e[1;77m8\e[0m\e[1;92m]\e[0m\e[1;93m Watch Video How To use This\e[0m"
+        echo -e "\e[1;92m[\e[0m\e[1;77m0\e[0m\e[1;92m]\e[0m\e[1;93m Exit\e[0m\n"
 	read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose an option: \e[0m' option
 
 	# Checking the user entered option
@@ -187,6 +188,11 @@ while true; do
 
 		am start -a android.intent.action.VIEW -d https://wa.me/923137119351 > /dev/null 2>&1
 	elif [[ $option == 7 || $option == 07 ]]; then
+		# If the user choosed the option for viewing author's instagram account, then we continue to open author's instagram account
+
+		am start -a android.intent.action.VIEW -d https://instagram.com/blckspidr > /dev/null 2>&1
+
+        elif [[ $option == 8 || $option == 08 ]]; then
 		# If the user choosed the option for viewing author's instagram account, then we continue to open author's instagram account
 
 		am start -a android.intent.action.VIEW -d https://instagram.com/blckspidr > /dev/null 2>&1
