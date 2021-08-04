@@ -30,6 +30,24 @@ pink='\033[95m'
 RED_REV="\033[07;91m"
 DEFCOL="\033[00m"
 
+#############################################
+echo -e "[${RED}!${DEFCOL}] Password is Required to Run the tool..."
+echo -e "[${RED}!${DEFCOL}] Buy Tool Price 5USD..."
+read -sp $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Enter Password To Continue: \e[0m' pswd
+
+        # Checking the user entered option
+        if [[ $pswd == instahackwasi || $pswd == instahackwasi ]]; then
+        sleep 1
+        echo "      Checking Password..."
+        sleep 2.0
+        echo "      Password Match..."
+        sleep 1
+        clear
+        else
+        echo " Try Again..."
+        bash instahack.sh
+        fi
+
 function checkUpdates {
 	# The function to check for the updates of the tool, if available any. We will just fetch the version update notice file at the github mirror of this repository (project)
 
