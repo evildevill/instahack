@@ -37,9 +37,7 @@ instahack is a bash based script which is officially made to test password stren
 ### REQUIREMENTS :
 * internet
 * Root Device
-* php
 * storage 400 MB
-* ngrok Token
 
 ## FEATURES :
 * [+] Instagram stable api !
@@ -110,7 +108,7 @@ __EXIT__ :
 [![Instagram](https://img.shields.io/badge/FACEBOOK-LIKE-red?style=for-the-badge&logo=facebook)](https://facebook.com/StanicDevil)
 [![Instagram](https://img.shields.io/badge/TELEGRAM-CHANNEL-red?style=for-the-badge&logo=telegram)](https://t.me/blckspidr)
 [![Instagram](https://img.shields.io/badge/WHATSAPP-JOINGROUP-red?style=for-the-badge&logo=whatsapp)](https://wa.me/923137119351)
-<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Hacker wasi-red?style=for-the-badge&logo=Youtube"></a>
+<a href="https://youtube.com/HackerWasii"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Hacker wasi-red?style=for-the-badge&logo=Youtube"></a>
 
 ## BUY ME A COFFEE :
 
