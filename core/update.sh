@@ -19,12 +19,12 @@
 #
 # First we will check wheter there are newer updates to the script or not, and then proceeds to download all the updates on the github mirror of the project's repository.
 
-if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/update.v1.3 2>/dev/null; then
+if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/update.v1.4 2>/dev/null; then
 	# If there are updates of the tool available, then we continue to fetch all the updates
 
 	# Displaying the new update message as well as the options of choices on the console screen
 	clear
-	echo -e "\n\n\n\n\e[92m                 INSTAHACK NEW UPDATE V1.3 IS AVAILABLE\e[0m"
+	echo -e "\n\n\n\n\e[92m                 INSTAHACK NEW UPDATE V1.4 IS AVAILABLE\e[0m"
 	echo -e "\e[96m                ╔═══════════════════════════════════╗\e[0m"
 	echo -e "\e[96m                ║  \e[93mINSTAhack\e[96m Update Is avaialbe\e[93m V1.3\e[96m   ║\e[0m"
 	echo -e "\e[96m                ║    To Update The \e[93mInstaHack\e[96m Tool      ║\e[0m"
