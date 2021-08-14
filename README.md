@@ -29,10 +29,12 @@ instahack is a bash based script which is officially made to test password stren
 ## AVAILABLE ON :
 
 * Termux
+* Kali Linux
 
 ### TESTED ON :
 
 * Termux
+* Kali Linux
 
 ### REQUIREMENTS :
 * internet
