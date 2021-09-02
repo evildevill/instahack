@@ -37,11 +37,14 @@ instahack is a bash based script which is officially made to test password stren
 * Kali Linux
 
 ### REQUIREMENTS :
-* internet
+* Temporary insta account
+* Fast internet
 * Root Device
-* storage 400 MB
+* storage 600 MB
 
 ## FEATURES :
+* [+] Insta OSINT !
+* [+]  Insta Bruteforce !
 * [+] Instagram stable api !
 * [+] Updated maintainence !
 * [+] tor usage !
@@ -56,10 +59,8 @@ instahack is a bash based script which is officially made to test password stren
 * `pkg install git -y`
 * `pip install lolcat`
 * `git clone https://github.com/evildevill/instahack`
-* `cd $HOME`
-* `ls`
 * `cd instahack`
-* `ls`
+* `pip install -r requirements.txt
 * `bash setup`
 * `bash instahack.sh`
 ```
@@ -72,6 +73,9 @@ instahack is a bash based script which is officially made to test password stren
 [+]--new session and start TOR (tor) before starting the attack
 ```
 ## USAGE OPTIONS [Termux] :
+
+__INFORMATION GATHERING__ :
+- From this option you can gather information about your target
 
 __AUTO ATTACK__ :
 - From this option you can start attack aon default pass list of tool.
