@@ -1,4 +1,5 @@
-requests --upgrade
+requests
+mechanize
 requests[socks]
 stem
 instagram-py
