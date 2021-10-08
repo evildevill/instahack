@@ -26,81 +26,24 @@ DEFCOL="\033[00m"
 # The main script starts here
 clear
 
-center() {
-	# The function to print a center aligned text with a horizontal rule just like as it is shown below :
-	# ==================================== EXAMPLE =====================================
-	#
-	# The function takes 2 arguments max to max. The first argument is the text that you want to display on the center, the second argument is the color that you want for the horizontal rule
-	
-	printf "${2}"
-	termwidth=$( stty size | cut -d " " -f2 )
-	padding="$(printf '%0.1s' ={1..500})"
-	printf '%*.*s %s %*.*s\n' 0 "$(((termwidth-2-${#1})/2))" "$padding" "$1" 0 "$(((termwidth-1-${#1})/2))" "$padding"
-	printf "${DEFCOL}"
+# Checking Root 
+trap 'echo exiting cleanly...; exit 1;' SIGINT SIGTSTP
+
+checkroot() {
+
+if [[ "$(id -u)" -ne 0 ]]; then
+   printf "\e[1;77mPlease, run this program as root!\n\e[0m"
+   exit 1
+fi
+
 }
 
-# Printing the start message on the console screen
-echo -e "\n[{$YELLOW}!${DEFCOL}] Starting the setup to install InstaHack..."
+checkroot
 
-# First checking wheter git command line tool is installed in the user's computer or not
-if [[ -z $( which git ) ]]; then
-	# If git command line tool is not installed, then we display the error message on the console screen
+(trap '' SIGINT SIGTSTP && command -v tor > /dev/null 2>&1 || { printf >&2  "\e[1;92mInstalling TOR, please wait...\n\e[0m"; apt-get update > /dev/null && apt-get -y install tor > /dev/null || printf "\e[1;91mTor Not installed.\n\e[0m"; }) & wait $!
 
-	echo -e "\n${RED_REV}[ Error : git package not found. Please install it to properly execute this setup. ]${DEFCOL}"
-fi
+(trap '' SIGINT SIGTSTP && command -v openssl > /dev/null 2>&1 || { printf >&2  "\e[1;92mInstalling openssl, please wait...\n\e[0m"; apt-get update > /dev/null && apt-get -y install openssl > /dev/null || printf "\e[1;91mOpenssl Not installed.\n\e[0m"; }) & wait $! 
 
-# Cloning the GIT repository mirror of the project at GitHub to the current folder
-if [[ -d "instahack" ]]; then
-	# If a directory named 'instahack' already exists in the current working directory, then we first remove that directory and then clone the repository
+(trap '' SIGINT SIGTSTP && command -v curl > /dev/null 2>&1 || { printf >&2  "\e[1;92mInstalling cURL, please wait...\n\e[0m"; apt-get update > /dev/null && apt-get -y install curl > /dev/null || printf "\e[1;91mCurl Not installed.\n\e[0m"; }) & wait $!
 
-	rm -rf instahack
-	git clone https://github.com/evildevill/instahack.git >/dev/null 2>&1
-else
-	# If no such directory named 'instahack' exists, then we directly clone the repository here
-
-	git clone https://github.com/evildevill/instahack.git >/dev/null 2>&1
-fi
-
-# Continuing to install several dependencies / packages
-center "INSTALLATION PROCESS" "${BLUE}"
-echo -e "[${YELLOW}!${DEFCOL}] Installing packages..."
-cd $HOME  # Changing the current working directory to the home directory of the user
-
-# ----
-# 1. We will use the 'pkg' package manager software as our main intentional platform for using this tool is termux android, that is why we are using this package manager software.
-# ----
-
-pkg install python -y >/dev/null 2>&1
-pkg install python2 -y >/dev/null 2>&1
-pkg install tor -y >/dev/null 2>&1
-pkg install git -y >/dev/null 2>&1
-pkg install wget -y >/dev/null 2>&1
-
-# Installing the core files required for the tool to work properly
-echo -e "[${YELLOW}!${DEFCOL}] Installing core files..."
-pip install --upgrade pip >/dev/null 2>&1
-pip3 install requests --upgrade >/dev/null 2>&1
-pip3 install requests[socks] >/dev/null 2>&1
-pip3 install stem >/dev/null 2>&1
-pip3 install instagram-py >/dev/null 2>&1
-
-# Setting up the servers
-echo -e "[${YELLOW}!${DEFCOL}] Setting up the servers..."
-cd $HOME >/dev/null 2>&1
-wget -O ~/instapy-config.json "https://git.io/v5DGy" >/dev/null 2>&1
-cd $HOME/instahack >/dev/null 2>&1
-#
-# 1. Setting up tor configurations with the custom torrc file defined in our project
-#
-cd /data/data/com.termux/files/usr/etc/tor >/dev/null 2>&1
-rm torrc >/dev/null 2>&1
-cd $HOME/instahack >/dev/null 2>&1
-mv torrc /data/data/com.termux/files/usr/etc/tor >/dev/null 2>&1
-
-# Finally after installing all the packages and dependencies, we print the setup done message on the console screen
-echo -e "[${GREEN}*${DEFCOL}] All things are completed..."
-center "STARTING INSTAHACK" "${GREEN}"
-
-# Launching the main bash script i.e., instahack.sh
-cd $HOME/instahack
-bash instahack.sh
+printf "\e[1;92mAll Requirements are installed! Now Use Can use it\n\e[0m"
