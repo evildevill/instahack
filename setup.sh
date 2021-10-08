@@ -3,17 +3,9 @@
 # The setup script for the InstaHack tool. This is a bash script that automates the installation of the required utilities and modules, and all the important required dependencies for the tool. For linux based devices only.
 #
 # Author : Wasim Akram (https://github.com/evildevill/)
-# Created on : June 28, 2020
+# Created on : October 08, 2021
 #
-# Last modified by : Rishav Das (https://github.com/rdofficial/)
-# Last modified on : May 10, 2021
 #
-# Changes made in the last modification :
-# 1. Adding commented docs and more comments to the script's code in order to make it more clean and easily readable to the programmers and other hackers.
-# 2. Removing some errors and also adding the git installed or not checker before cloning the actual project.
-# 3. Removing some packages list that were to be installed, as in the last modification of the instahack.sh script, we have removed the requirement for installing those tools. The tools are - lolcat.
-#
-
 # Defining the ANSII color code variables for colored output
 RED="\033[91m"
 GREEN="\033[92m"
