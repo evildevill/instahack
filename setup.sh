@@ -18,6 +18,8 @@ DEFCOL="\033[00m"
 # The main script starts here
 clear
 
+pip install lolcat > /dev/null 2>&1
+
 # Checking Root 
 trap 'echo exiting cleanly...; exit 1;' SIGINT SIGTSTP
 
