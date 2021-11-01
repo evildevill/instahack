@@ -51,18 +51,20 @@ instahack is a bash based script which is officially made to test password stren
 * [+] Easy for Beginners !
 
 ## INSTALLATION [Termux] :
+```
+ apt-get update -y
+ apt-get upgrade -y
+ pkg install python -y
+ pkg install python2 -y
+ pkg install git -y
+ pip install lolcat
+ git clone https://github.com/evildevill/instahack
+ cd instahack
+ pip install -r requirements.txt
+ bash setup.sh
+ bash instahack.sh
+```
 
-* `apt-get update -y`
-* `apt-get upgrade -y`
-* `pkg install python -y`
-* `pkg install python2 -y`
-* `pkg install git -y`
-* `pip install lolcat`
-* `git clone https://github.com/evildevill/instahack`
-* `cd instahack`
-* `pip install -r requirements.txt`
-* `bash setup`
-* `bash instahack.sh`
 ```
 [+]--Now you need internet connection to continue further process...
 
