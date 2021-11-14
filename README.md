@@ -39,7 +39,6 @@ instahack is a bash based script which is officially made to test password stren
 ### REQUIREMENTS :
 * Temporary insta account
 * Fast internet
-* Root Device
 * storage 600 MB
 
 ## FEATURES :
