@@ -8,7 +8,7 @@
 <img src="https://visitor-badge.laobi.icu/badge?page_id=HackerWaSi" alt="visitor badge"/>
 </p>
 <p align="center">
-<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="instahack" src="https://github.com/evildevill/instahack/blob/master/assets/20210219_144319.jpg"></a>
+<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="instahack" width="50%" src="https://github.com/evildevill/instahack/blob/master/assets/20210219_144319.jpg"></a>
 </p>
 <p align="center">
 <a href="https://github.com/evildevill"><img title="Github" src="https://img.shields.io/badge/evildevill-brightgreen?style=for-the-badge&logo=github"></a>
