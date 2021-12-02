@@ -5,6 +5,7 @@
 <a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="Made in INDIA" src="https://img.shields.io/badge/Tool-instahack-green.svg"></a>
 <a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="Version" src="https://img.shields.io/badge/Version-1.0-green.svg?style=flat-square"></a>
 <a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="Maintainence" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=HackerWaSi" alt="visitor badge"/>
 </p>
 <p align="center">
 <a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="instahack" src="https://github.com/evildevill/instahack/blob/master/assets/20210219_144319.jpg"></a>
@@ -125,7 +126,3 @@ __EXIT__ :
 
 ## WARNING : 
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
-
-<p>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=HackerWaSi" alt="visitor badge"/>
-</p>
