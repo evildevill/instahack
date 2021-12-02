@@ -125,3 +125,7 @@ __EXIT__ :
 
 ## WARNING : 
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
+
+<p>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=HackerWaSi" alt="visitor badge"/>
+</p>
