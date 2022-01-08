@@ -38,8 +38,9 @@ instahack is a bash based script which is officially made to test password stren
 * Kali Linux
 
 ### REQUIREMENTS :
-* Temporary insta account
+* Temporary Instagram account
 * Fast internet
+* key is Required
 * storage 600 MB
 
 ## FEATURES :
