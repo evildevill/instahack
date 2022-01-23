@@ -19,7 +19,7 @@
 #
 # First we will check wheter there are newer updates to the script or not, and then proceeds to download all the updates on the github mirror of the project's repository.
 
-if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/update.v1.4 2>/dev/null; then
+if wget --spider https://raw.githubusercontent.com/evildevill/instahack/master/update.v4.0 2>/dev/null; then
 	# If there are updates of the tool available, then we continue to fetch all the updates
 
 	# Displaying the new update message as well as the options of choices on the console screen
