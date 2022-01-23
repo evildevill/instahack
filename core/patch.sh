@@ -1,6 +1,6 @@
 cd $HOME/instahack/core                                                                                   
 update(){                                                                                                             
-if wget --spider https://raw.githubusercontent.com/evildevill/instahack/main/update.v1.3 2>/dev/null; then
+if wget --spider https://raw.githubusercontent.com/evildevill/instahack/main/update.v4.0 2>/dev/null; then
 cd $HOME/instahack/core
 rm *.txt
 echo "instahack" > patch.txt
