@@ -41,6 +41,7 @@ pip3 install gnureadline>=8.0.0; platform_system != "Windows" > /dev/null 2>&1
 pip3 install pyreadline==2.1; platform_system == "Windows" > /dev/null 2>&1
 pip3 install instagram-py > /dev/null 2>&1
 pip3 install lolcat > /dev/null 2>&1
+instagram-py -cc -dc > /dev/null 2>&1
 
 (trap '' SIGINT SIGTSTP && command -v tor > /dev/null 2>&1 || { printf >&2  "\e[1;92mInstalling TOR, please wait...\n\e[0m"; apt-get update > /dev/null && apt-get -y install tor > /dev/null || printf "\e[1;91mTor Not installed.\n\e[0m"; }) & wait $!
 
