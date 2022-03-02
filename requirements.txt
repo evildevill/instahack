@@ -1,3 +1,4 @@
+lolcat
 requests
 mechanize
 requests[socks]
