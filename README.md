@@ -155,7 +155,7 @@ __EXIT__ :
 
 <br>
 <p align="center">
-<img width="50%" src="https://github.com/evildevill/instahack/blob/master/assets/Screenshot_20210920_062240.jpg"/>
+<img width="50%" src="https://raw.githubusercontent.com/evildevill/instahack/master/assets/Screenshot_20220323_221439.jpg"/>
 <img width="45%" src="https://github.com/evildevill/instahack/blob/master/assets/Screenshot_20210920_062617.jpg"/>
 </p>
 
