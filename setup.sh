@@ -22,11 +22,11 @@ echo -e $YELLOW "Installing Tor "
 sleep 2.0
 echo ""
 apt install tor > /dev/null 2>&1
-service tor start > /dev/null 2>&1
-echo -e $YELLOW "Virtual Environment "
-apt install python3.9-venv > /dev/null 2>&1
-python3 -m venv venv > /dev/null 2>&1
-source venv/bin/activate
+#service tor start > /dev/null 2>&1
+#echo -e $YELLOW "Virtual Environment "
+#apt install python3.9-venv > /dev/null 2>&1
+#python3 -m venv venv > /dev/null 2>&1
+#source venv/bin/activate
 echo -e $YELLOW "Installing Requirements "
 pip3 install requests > /dev/null 2>&1
 pip3 install mechanize > /dev/null 2>&1
@@ -39,9 +39,9 @@ pip3 install prettytable==0.7.2 > /dev/null 2>&1
 pip3 install instagram-private-api==1.6.0 > /dev/null 2>&1
 pip3 install gnureadline>=8.0.0; platform_system != "Windows" > /dev/null 2>&1
 pip3 install pyreadline==2.1; platform_system == "Windows" > /dev/null 2>&1
-pip3 install instagram-py > /dev/null 2>&1
+pip3 install instahack > /dev/null 2>&1
 pip3 install lolcat > /dev/null 2>&1
-instagram-py -cc -dc > /dev/null 2>&1
+instahack -cc -dc > /dev/null 2>&1
 
 (trap '' SIGINT SIGTSTP && command -v tor > /dev/null 2>&1 || { printf >&2  "\e[1;92mInstalling TOR, please wait...\n\e[0m"; apt-get update > /dev/null && apt-get -y install tor > /dev/null || printf "\e[1;91mTor Not installed.\n\e[0m"; }) & wait $!
 
