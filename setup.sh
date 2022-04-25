@@ -17,7 +17,9 @@ DEFCOL="\033[00m"
 
 # The main script starts here
 clear
-apt install figlet
+apt install figlet -y
+apt-get install wget -y
+apt-get install curl -y
 echo -e $YELLOW "Installing Tor "
 sleep 2.0
 echo ""
