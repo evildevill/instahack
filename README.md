@@ -71,6 +71,8 @@ instahack is a bash based script which is officially made to test password stren
 * [+] Insta OSINT !
 * [+] Insta Bruteforce !
 * [+] Instagram stable api !
+* [+] Multi Thrading
+* [+] Twitter Bruteforce
 * [+] Updated maintainence !
 * [+] tor usage !
 * [+] Easy for Beginners !
@@ -88,9 +90,11 @@ $ sudo pip3 install stem
 ```
  apt-get update -y
  apt-get upgrade -y
- pkg install python -y
- pkg install python2 -y
- pkg install git -y
+ apt-get install python -y
+ apt-get install python2 -y
+ apt-get install git -y
+ apt-get install wget -y
+ apt-get install curl -y
  pip install lolcat
  git clone https://github.com/evildevill/instahack
  cd instahack
