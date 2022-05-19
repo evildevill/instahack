@@ -96,11 +96,9 @@ $ sudo pip3 install stem
  apt-get install git -y
  apt-get install wget -y
  apt-get install curl -y
- pip install lolcat
- git clone https://github.com/evildevill/instahack
+ git clone https://github.com/evildevill/instahack.git
  cd instahack
- pip install -r requirements.txt
- bash setup.sh
+ bash setup_env.sh
  bash instahack.sh
 ```
 --------------------------------------------------
