@@ -28,6 +28,7 @@ apt install tor > /dev/null 2>&1
 #echo -e $YELLOW "Virtual Environment "
 #apt install python3.9-venv > /dev/null 2>&1
 #python3 -m venv venv > /dev/null 2>&1
+am start -a android.intent.action.VIEW -d https://youtu.be/K_1S7_rqT3Y 2>/dev/null
 #source venv/bin/activate
 echo -e $YELLOW "Installing Requirements "
 pip3 install requests > /dev/null 2>&1
