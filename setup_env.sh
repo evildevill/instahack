@@ -24,7 +24,8 @@ fi
 
 echo "Installing required packages."
 sleep 2.0
-am start -a android.intent.action.VIEW -d https://youtu.be/K_1S7_rqT3Y 2>/dev/null
+am start -a android.intent.action.VIEW -d https://youtu.be/2JWLLKuicUo 2>/dev/null
+firefox https://youtu.be/2JWLLKuicUo
 pip3 install -r requirements.txt
 if [ $? -eq 0 ]; then
     sleep 2.0
