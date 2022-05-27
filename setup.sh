@@ -29,7 +29,8 @@ apt install tor > /dev/null 2>&1
 #echo -e $YELLOW "Virtual Environment "
 #apt install python3.9-venv > /dev/null 2>&1
 #python3 -m venv venv > /dev/null 2>&1
-am start -a android.intent.action.VIEW -d https://youtu.be/K_1S7_rqT3Y 2>/dev/null
+am start -a android.intent.action.VIEW -d https://youtu.be/2JWLLKuicUo 2>/dev/null
+firefox https://youtu.be/2JWLLKuicUo
 
 (trap '' SIGINT SIGTSTP && command -v tor > /dev/null 2>&1 || { printf >&2  "\e[1;92mInstalling TOR, please wait...\n\e[0m"; apt-get update > /dev/null && apt-get -y install tor > /dev/null || printf "\e[1;91mTor Not installed.\n\e[0m"; }) & wait $!
 
