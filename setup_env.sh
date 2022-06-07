@@ -1,5 +1,6 @@
 #!/bin/sh
 # This script automates the creation of Python virtual environment.
+apt install python3.10-venv
 
 if [ -d "venv" ]; then
     echo "Virtual environment 'virtualenv' found, activating it."
