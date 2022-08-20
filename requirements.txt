@@ -2,6 +2,7 @@ requests
 mechanize
 requests[socks]
 stem
+lolcat
 requests==2.24.0
 requests-toolbelt==0.9.1
 geopy>=2.0.0
