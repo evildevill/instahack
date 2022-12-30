@@ -89,41 +89,12 @@ $ sudo pip3 install stem
 
 ## INSTALLATION [Termux] :
 ```
- apt-get update -y
- apt-get upgrade -y
- apt-get install python -y
- apt-get install python2 -y
- apt-get install git -y
- apt-get install wget -y
- apt-get install curl -y
- git clone https://github.com/evildevill/instahack.git
- cd instahack
- bash setup_env.sh
- bash instahack.sh
+wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && bash setup.sh
 ```
---------------------------------------------------
-    Configuring Tor server to open control port
---------------------------------------------------
-
-open your **tor configuration** file usually located at **/etc/tor/torrc**
-
-
-::
- 
- $ sudo vim /etc/tor/torrc # open it with your text editor
- 
-
-**search** for the file for this **specific section**
-
-::
-
- ## The port on which Tor will listen for local connections from Tor
- ## controller applications, as documented in control-spec.txt.
- #ControlPort 9051
- 
-**uncomment** 'ControlPort' by deleting the **#** before 'ControlPort' , **now save the file and restart your tor server**
-
-**now you are ready to crack any instagram account , make sure your tor configuration matched ~/instapy-config.json** 
+## INSTALLATION [Kali Linux] :
+```
+wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && bash setup.sh
+```
 
 ```
 [+]--Now you need internet connection to continue further process...
