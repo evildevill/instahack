@@ -41,7 +41,7 @@ if [ $os = "kali" ]; then
     sudo apt-get install git -y > /dev/null 2>&1 
     sudo apt-get install wget -y > /dev/null 2>&1
     sudo apt-get install curl -y > /dev/null 2>&1
-    sudo pip3 install lolcat -y > /dev/null 2>&1
+    pip3 install lolcat -y > /dev/null 2>&1
     sudo apt install tor -y > /dev/null 2>&1
     git clone https://github.com/evildevill/instahack.git
     cd instahack
