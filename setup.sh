@@ -67,24 +67,25 @@ elif [ $os = "termux" ]; then
     echo -e $GREEN "Please wait This may take a moment..." $DEFCOL
     echo ""
     sleep 3
-    pkg update -y > /dev/null 2>&1
-    pkg upgrade -y > /dev/null 2>&1
-    pkg install python -y > /dev/null 2>&1
-    apt install python3 -y > /dev/null 2>&1
-    apt install git -y > /dev/null 2>&1
-    apt install wget -y > /dev/null 2>&1
-    apt install curl -y > /dev/null 2>&1
-    apt install tor > /dev/null 2>&1
-    pip3 install lolcat -y > /dev/null 2>&1
-    pip3 install requests > /dev/null 2>&1
-    pip3 install mechanize > /dev/null 2>&1
-    pip3 install bs4 > /dev/null 2>&1
-    pip3 install colorama > /dev/null 2>&1
-    pip3 install requests[socks] > /dev/null 2>&1
-    pip3 install stem > /dev/null 2>&1
-    pip3 install geopy>=2.0.0 > /dev/null 2>&1
-    pip3 install prettytable==0.7.2 > /dev/null 2>&1
-    pip3 install instagram-private-api==1.6.0 > /dev/null 2>&1
+    # pkg update -y
+    # pkg upgrade -y
+    pkg install python -y
+    pkg install python3 -y
+    pkg install git -y
+    pkg install wget -y
+    pkg install curl -y
+    pkg install tor -y
+    pip3 install lolcat
+    pip3 install requests
+    pip3 install mechanize
+    pip3 install bs4
+    pip3 install colorama
+    pip3 install requests[socks]
+    pip3 install stem
+    pip3 install geopy>=2.0.0
+    pip3 install prettytable==0.7.2
+    pip3 install instagram-private-api==1.6.0
+    cd
     git clone https://github.com/evildevill/instahack.git
     cd instahack
     am start -a android.intent.action.VIEW -d https://youtu.be/2JWLLKuicUo 2>/dev/null
