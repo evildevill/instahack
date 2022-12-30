@@ -74,8 +74,8 @@ elif [ $os = "termux" ]; then
     apt install git -y > /dev/null 2>&1
     apt install wget -y > /dev/null 2>&1
     apt install curl -y > /dev/null 2>&1
-    apt install tor > /dev/null 2>&1
-    pip3 install lolcat -y > /dev/null 2>&1
+    apt install tor -y > /dev/null 2>&1
+    pip3 install lolcat > /dev/null 2>&1
     pip3 install requests > /dev/null 2>&1
     pip3 install mechanize > /dev/null 2>&1
     pip3 install bs4 > /dev/null 2>&1
