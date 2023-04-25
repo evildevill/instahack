@@ -4,7 +4,7 @@
 # For linux based devices only.
 
 # Author : Waseem Akram (https://github.com/evildevill/)
-# Modified on : December 30, 2022
+# Modified on : April 25, 2023
 
 # This file is part of InstaHack.
 #
