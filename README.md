@@ -2,7 +2,7 @@
 <a href="https://instagram.com/blckspidr"><img title="Made in Pakistan" src="https://img.shields.io/badge/MADE%20IN-PakistN-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="Made in Pakistan" src="https://img.shields.io/badge/Tool-instahack-green.svg"></a>
+<a href="https://youtube.com/Hackerwasii"><img title="Made in Pakistan" src="https://img.shields.io/badge/Tool-instahack-green.svg"></a>
 <a href="https://guthub.com/evildevill/instahack"><img title="Version" src="https://img.shields.io/badge/Version-4.3.0-green.svg?style=flat-square"></a>
 <a href="https://github.com/evildevill"><img title="Maintainence" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=HackerWaSi" alt="visitor badge"/>
@@ -12,7 +12,7 @@
 </p>
 <p align="center">
 <a href="https://github.com/evildevill"><img title="Github" src="https://img.shields.io/badge/evildevill-brightgreen?style=for-the-badge&logo=github"></a>
-<a href="https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Hacker wasii-red?style=for-the-badge&logo=Youtube"></a>
+<a href="https://youtube.com/Hackerwasii"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Hacker wasii-red?style=for-the-badge&logo=Youtube"></a>
 </p>
 <p align="center">
 <a href="https://github.com/evildevill"><img title="Language" src="https://img.shields.io/badge/Made%20with-Bash-1f425f.svg?v=103"></a>
@@ -69,14 +69,14 @@ instahack is a bash based script which is officially made to test password stren
 * Kali Linux
 
 ## FEATURES :
-* [+] Insta OSINT !
-* [+] Insta Bruteforce !
-* [+] Instagram stable api !
-* [+] Multi Thrading
-* [+] Twitter Bruteforce
-* [+] Updated maintainence !
-* [+] tor usage !
-* [+] Easy for Beginners !
+- Insta OSINT !
+- Insta Bruteforce !
+- Instagram stable api !
+- Multi Thrading
+- Twitter Bruteforce
+- Updated maintainence !
+- tor usage !
+- Easy for Beginners !
 
 ## REQUIREMENTS
 
@@ -95,17 +95,16 @@ wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && b
 ```
 wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && bash setup.sh
 ```
+### USAGE OPTIONS :
+- Now you need internet connection to continue further process...
 
-```
-[+]--Now you need internet connection to continue further process...
+- You can select any option by clicking on your keyboard
 
-[+]--You can select any option by clicking on your keyboard
+- Note:- Don't delete any of the scripts included in core files
 
-[+]--Note:- Don't delete any of the scripts included in core files
+- new session and start TOR (tor) before starting the attack
 
-[+]--new session and start TOR (tor) before starting the attack
-```
-## USAGE OPTIONS [Termux] :
+### OPTIONS:
 
 __INFORMATION GATHERING__ :
 - From this option you can gather information about your target
@@ -132,27 +131,22 @@ __EXIT__ :
 <img width="50%" src="https://raw.githubusercontent.com/evildevill/evildevillpatch/main/assets/instahack.png"/>
 </p>
 
-## WATCH VIDEO [Termux]
-
-
 
 ## CONNECT WITH US :
 
 [![Messenger](https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger)](https://m.me/hackerwasiii)
 <a href="https://github.com/evildevill"><img title="Github" src="https://img.shields.io/badge/evildevill-brightgreen?style=for-the-badge&logo=github"></a>
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-FOLLOW-red?style=for-the-badge&logo=instagram)](https://instagram.com/blckspidr)
-[![Instagram](https://img.shields.io/badge/WEBSITE-VISIT-yellow?style=for-the-badge&logo=blogger)](https://hackerwasii.blogspot.com)
-[![Instagram](https://img.shields.io/badge/LINKEDIN-CONNECT-red?style=for-the-badge&logo=linkedin)](https://linkedin/hackerwasii)
-[![Instagram](https://img.shields.io/badge/FACEBOOK-LIKE-red?style=for-the-badge&logo=facebook)](https://facebook.com/StanicDevil)
+[![Instagram](https://img.shields.io/badge/WEBSITE-VISIT-yellow?style=for-the-badge&logo=blogger)](https://hackerwasii.com)
+[![Instagram](https://img.shields.io/badge/LINKEDIN-CONNECT-red?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/hackerwasii)
+[![Instagram](https://img.shields.io/badge/FACEBOOK-LIKE-red?style=for-the-badge&logo=facebook)](https://facebook.com/hackerwasii)
 [![Instagram](https://img.shields.io/badge/TELEGRAM-CHANNEL-red?style=for-the-badge&logo=telegram)](https://t.me/blckspidr)
-[![Instagram](https://img.shields.io/badge/WHATSAPP-JOINGROUP-red?style=for-the-badge&logo=whatsapp)](https://wa.me/923137119351)
-<a href="https://youtube.com/HackerWasii"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Hacker wasi-red?style=for-the-badge&logo=Youtube"></a>
+[![Instagram](https://img.shields.io/badge/WHATSAPP-Number-red?style=for-the-badge&logo=whatsapp)](https://wa.me/923137119351)
+<a href="https://youtube.com/Hackerwasii"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Hackerwasii-red?style=for-the-badge&logo=Youtube"></a>
 
-## BUY ME A COFFEE :
+## Support Me On Patreon:
+[![Patreon](https://img.shields.io/badge/Patreon-DONATE-red?style=for-the-badge&logo=patreon)](https://www.patreon.com/hackerwasii)
 
-<p align="center">
-<a href="https://www.paypal.me/hackerwasii"><img title="evildevill" src="https://camo.githubusercontent.com/ae8af018f80649f3d379eb23dbf59acceaffa24e/68747470733a2f2f6c69626572617061792e636f6d2f6173736574732f776964676574732f646f6e6174652e737667"></a>
-</p>
 
 ## WARNING : 
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
