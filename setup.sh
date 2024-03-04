@@ -1,10 +1,9 @@
 # Setup script - InstaHack
-# The setup script for the InstaHack tool. This is a pythhon script that automates the installation of the 
-# required utilities and modules, and all the important required dependencies for the tool. 
-# For linux based devices only.
+# The setup script for the InstaHack tool. This is a python script that automates the installation of the
+# required utilities and modules, and all the important required dependencies for the tool.
 
 # Author : Waseem Akram (https://github.com/evildevill/)
-# Modified on : April 25, 2023
+# Modified on : March 04, 2024
 
 # This file is part of InstaHack.
 #
@@ -20,55 +19,58 @@ DEFCOL="\033[00m"
 # The main script starts here
 clear
 
-# Prompt the user for input
-echo -e $GREEN "Which Distribution are you using? (Termux/kali)" $DEFCOL
-echo -e $YEllOW "Note: This script is only for Termux and Kali Linux" $DEFCOL
-echo -e $RED "Enter your choice kali or termux: " $DEFCOL
-read os
+# Detect the user's operating system
+os=$(uname)
 
-# Check the user's input and perform different actions based on the input
-if [ $os = "kali" ]; then
-    # If the user is using Kali Linux, install the required utilities and modules
+# Check the user's operating system and perform different actions based on the operating system
+if [ "$os" = "Linux" ]; then
+    # If the user is using Linux, check the distribution
+    distro=$(cat /etc/*-release | grep '^ID=')
+
+    if [[ "$distro" == *"kali"* ]]; then
+        # If the user is using Kali Linux, install the required utilities and modules
+        clear
+        echo ""
+        echo -e $GREEN "Detected Kali Linux. Installing the required utilities and modules..." $DEFCOL
+        echo -e $GREEN "Please wait This may take a moment depending on your internet speed..." $DEFCOL
+        echo -e $GREEN "You may be prompted to enter your password..." $DEFCOL
+        echo ""
+        sleep 1
+        sudo apt-get install python -y >/dev/null 2>&1
+        sudo apt-get install git -y >/dev/null 2>&1
+        sudo apt-get install wget -y >/dev/null 2>&1
+        sudo apt-get install curl -y >/dev/null 2>&1
+        pip3 install lolcat -y >/dev/null 2>&1
+        sudo apt install tor -y >/dev/null 2>&1
+        git clone https://github.com/evildevill/instahack.git
+        cd instahack
+        dir="/home/$USER/.local/bin"
+        # Check if the directory is in the PATH
+        if echo $PATH | grep -q $dir; then
+            echo "$dir is already in the PATH"
+        else
+            echo "Adding $dir to PATH"
+            echo "export PATH=$dir:\$PATH" >>~/.bashrc
+            source ~/.bashrc
+        fi
+        pip3 install -r requirements.txt
+        sudo rm -rf /etc/tor/torrc
+        sudo cp torrc /etc/tor/torrc
+        echo -e $GREEN "Setup completed successfully" $DEFCOL
+        echo -e $GREEN "Open new terminal and type $RED tor $GREEN then hit enter" $DEFCOL
+        sleep 5
+        bash instahack.sh
+    else
+        echo -e $GREEN "Sorry, this Linux distribution is not supported" $DEFCOL
+    fi
+elif [ -d "/data/data/com.termux/files/usr/" ]; then
+    # If the user is using Termux on Android, install the required utilities and modules
     clear
     echo ""
-    echo -e $GREEN "Installing the required utilities and modules..." $DEFCOL
-    echo -e $GREEN "Please wait This may take a moment..." $DEFCOL
-    echo ""
-    sleep 1
-    # sudo apt-get update -y > /dev/null 2>&1
-    # sudo apt-get upgrade -y > /dev/null 2>&1
-    sudo apt-get install python -y > /dev/null 2>&1
-    sudo apt-get install git -y > /dev/null 2>&1 
-    sudo apt-get install wget -y > /dev/null 2>&1
-    sudo apt-get install curl -y > /dev/null 2>&1
-    pip3 install lolcat -y > /dev/null 2>&1
-    sudo apt install tor -y > /dev/null 2>&1
-    git clone https://github.com/evildevill/instahack.git
-    cd instahack
-    export PATH=/home/$USER/.local/bin:$PATH
-    pip3 install -r requirements.txt
-    sudo firefox https://youtu.be/2JWLLKuicUo > /dev/null 2>&1
-    sudo rm -rf /etc/tor/torrc
-    sudo cp torrc /etc/tor/torrc
-    echo -e $GREEN "Setup completed successfully" $DEFCOL
-    echo -e $GREEN "Open new terminal and type $RED tor $GREEN then hit enter" $DEFCOL
-    sleep 5
-    bash instahack.sh
-    # echo -e $GREEN "Then type $RED bash instahack.sh $GREEN and hit enter" $DEFCOL
-    # echo -e $GREEN "Now you can use the tool" $DEFCOL
-    # echo -e $GREEN "Exiting..." $DEFCOL
-    # sleep 3
-    exit
-elif [ $os = "termux" ]; then
-    # If the user is using Termux, install the required utilities and modules
-    clear
-    echo ""
-    echo -e $GREEN "Installing the required utilities and modules..." $DEFCOL
+    echo -e $GREEN "Detected Termux on Android. Installing the required utilities and modules..." $DEFCOL
     echo -e $GREEN "Please wait This may take a moment..." $DEFCOL
     echo ""
     sleep 3
-    # pkg update -y
-    # pkg upgrade -y
     pkg install python -y
     pkg install python3 -y
     pkg install git -y
@@ -82,13 +84,10 @@ elif [ $os = "termux" ]; then
     pip3 install colorama
     pip3 install requests[socks]
     pip3 install stem
-    pip3 install geopy>=2.0.0
-    pip3 install prettytable==0.7.2
     pip3 install instagram-private-api==1.6.0
     cd
     git clone https://github.com/evildevill/instahack.git
     cd instahack
-    am start -a android.intent.action.VIEW -d https://youtu.be/2JWLLKuicUo 2>/dev/null
     rm -rf /data/data/com.termux/files/usr/etc/tor/torrc
     cp torrc /data/data/com.termux/files/usr/etc/tor/torrc
     echo -e $GREEN "Setup completed successfully" $DEFCOL
@@ -96,10 +95,6 @@ elif [ $os = "termux" ]; then
     sleep 4
     bash instahack.sh
 else
-    # If the user's input does not match any of the above options, print a message
-    echo -e $GREEN "Sorry, I don't recognize that operating system" $DEFCOL
-    echo -e $GREEN "Please try again" $DEFCOL
-    echo -e $GREEN "Exiting..." $DEFCOL
-    sleep 3
-    exit
+    # If the user's operating system does not match any of the above options, print a message
+    echo -e $GREEN "Sorry, this operating system is not supported" $DEFCOL
 fi
