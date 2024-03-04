@@ -87,42 +87,35 @@ $ sudo pip3 install requests[socks]
 $ sudo pip3 install stem
 ```
 
-## INSTALLATION [Termux] :
+### INSTALLATION:
 ```
 wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && bash setup.sh
 ```
-## INSTALLATION [Kali Linux] :
-```
-wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && bash setup.sh
-```
+
 ### USAGE OPTIONS :
 - Now you need internet connection to continue further process...
-
 - You can select any option by clicking on your keyboard
-
 - Note:- Don't delete any of the scripts included in core files
-
 - new session and start TOR (tor) before starting the attack
 
 ### OPTIONS:
 
-__INFORMATION GATHERING__ :
-- From this option you can gather information about your target
+- INFORMATION GATHERING:
+    - From this option you can gather information about your target
 
-__AUTO ATTACK__ :
-- From this option you can start attack aon default pass list of tool.
+- AUTO ATTACK:
+  -  From this option you can start attack aon default pass list of tool.
 
-__MANUAL ATTACK__ :
-- From this option you can select manual pass list and try to attack.
+- MANUAL ATTACK:
+    - From this option you can select manual pass list and try to attack.
 
-__ABOUT__ :
-- From this option you can know more about author.
+- UPDATE:
+  - From this option you can update instahack tool if updates are available for that.
 
-__UPDATE__ :
-- From this option you can update instahack tool if updates are available for that.
+- EXIT:
+  - From this option you can exit from tool 
 
-__EXIT__ :
-- From this option you can exit from tool 
+and many more options...
 
 ## SCREEN SHOTS [Termux]
 
