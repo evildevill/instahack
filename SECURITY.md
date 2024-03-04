@@ -14,6 +14,9 @@ currently being supported with bug fixes.
 
 ## Reporting a Vulnerability
 
-- if you find a bug then lemme know i will fix this asap 
+- If you find any vulnerability in the code, please report it to me.
+- I will fix it as soon as possible.
 - Email me with proper details and screenshots.
 - support@hackerwasii.com
+
+Thank you!💙🙂
