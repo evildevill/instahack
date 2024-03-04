@@ -73,12 +73,40 @@ clear
 operating_system=$(detect_os)
 
 # Check the user's operating system and perform different actions based on the operating system
-if [ "$operating_system" = "Linux" ]; then
+if [ -d "/data/data/com.termux/files/usr/" ]; then
+    # If the user is using Termux, install the required utilities and modules
+    echo -e $GREEN "Detected Termux on Android. Installing the required utilities and modules..." $DEFCOL
+    echo -e $GREEN "Please wait This may take a moment depending on your internet speed..." $DEFCOL
+    echo -e $GREEN "You may be prompted to grant storage permissions..." $DEFCOL
+    echo ""
+    # If the user is using Termux on Android, install the required utilities and modules
+    sleep 3
+    install_utilities_and_modules_termux
+    cd $HOME
+    # check if instahack folder exists
+    if [ -d "instahack" ]; then
+        cd instahack
+        sleep 2
+        bash instahack.sh
+    else
+        cd $HOME
+        git clone https://github.com/evildevill/instahack
+        cd instahack
+        rm -rf /data/data/com.termux/files/usr/etc/tor/torrc
+        cp torrc /data/data/com.termux/files/usr/etc/tor/torrc
+        pip3 install -r requirements.txt
+        echo -e $GREEN "Setup completed successfully" $DEFCOL
+        echo -e $GREEN "Open new terminal and type $RED tor $GREEN then hit enter" $DEFCOL
+        sleep 4
+        bash instahack.sh
+    fi
+    # If the user is using Linux, check the distribution
+elif [[ "$operating_system" == *"Linux"* ]]; then
     # If the user is using Linux, check the distribution
     linux_distro=$(check_distro)
-
     if [[ "$linux_distro" == *"kali"* ]]; then
         # If the user is using Kali Linux, install the required utilities and modules
+        linux_distro=$(check_distro)
         clear
         echo ""
         echo -e $GREEN "Detected Kali Linux. Installing the required utilities and modules..." $DEFCOL
@@ -103,37 +131,12 @@ if [ "$operating_system" = "Linux" ]; then
             echo -e $GREEN "Open new terminal and type $RED tor $GREEN then hit enter" $DEFCOL
             sleep 5
             bash instahack.sh
-        fi
+         fi
     else
         echo -e $GREEN "Sorry, this Linux distribution is not supported" $DEFCOL
-    fi
-elif [ "$linux_distro" = "android" ] || [ -d "/data/data/com.termux/files/usr/" ]; then
-    # If the user is using Termux on Android, install the required utilities and modules
-    clear
-    echo ""
-    echo -e $GREEN "Detected Termux on Android. Installing the required utilities and modules..." $DEFCOL
-    echo -e $GREEN "Please wait This may take a moment..." $DEFCOL
-    echo ""
-    sleep 3
-    install_utilities_and_modules_termux
-    cd $HOME
-    # check if instahack folder exists
-    if [ -d "instahack" ]; then
-        cd instahack
-        sleep 2
-        bash instahack.sh
-    else
-        git clone https://github.com/evildevill/instahack
-        cd instahack
-        rm -rf /data/data/com.termux/files/usr/etc/tor/torrc
-        cp torrc /data/data/com.termux/files/usr/etc/tor/torrc
-        pip3 install -r requirements.txt
-        echo -e $GREEN "Setup completed successfully" $DEFCOL
-        echo -e $GREEN "Open new terminal and type $RED tor $GREEN then hit enter" $DEFCOL
-        sleep 4
-        bash instahack.sh
     fi
 else
     # If the user's operating system does not match any of the above options, print a message
     echo -e $GREEN "Sorry, this operating system is not supported" $DEFCOL
 fi
+# End of the script
