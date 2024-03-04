@@ -69,6 +69,28 @@ install_utilities_and_modules_termux() {
     pip3 install instagram-private-api==1.6.0
 }
 
+downloading_password_lists() {
+    echo -e $GREEN "Downloading password list..." $DEFCOL
+    echo -e $GREEN "Please wait This may take a moment"
+    echo -e $GREEN "Depending on your internet speed.." $DEFCOL
+    echo ""
+    sleep 2
+    # Array of password lists to download
+    password_lists=("pass1.txt" "pass2.txt" "pass3.txt" "pass4.txt")
+    # Loop over the array and download each password list
+    for password_list in ${password_lists[@]}; do
+        if ! wget https://pub-2b8e269912ef4e92a7cdaa2352aee92f.r2.dev/$password_list; then
+            echo -e $RED "Failed to download $password_list" $DEFCOL
+            return 1
+        fi
+    done
+    echo -e $GREEN "Password list downloaded successfully" $DEFCOL
+    # Create pass folder inside instahack then move these into instahack/pass folder
+    mkdir -p $HOME/instahack/pass
+    mv ${password_lists[@]} $HOME/instahack/pass
+    echo ""
+}
+
 # The main script starts here
 clear
 
@@ -78,8 +100,10 @@ operating_system=$(detect_os)
 # Check the user's operating system and perform different actions based on the operating system
 if [ -d "/data/data/com.termux/files/usr/" ]; then
     # If the user is using Termux, install the required utilities and modules
-    echo -e $GREEN "Detected Termux on Android. Installing the required utilities and modules..." $DEFCOL
-    echo -e $GREEN "Please wait This may take a moment depending on your internet speed..." $DEFCOL
+    echo -e $GREEN "Detected Termux on Android." $DEFCOL 
+    echo -e $GREEN "Installing the required utilities and modules." $DEFCOL
+    echo -e $GREEN "Please wait This may take a moment - " $DEFCOL
+    echo -e $GREEN "Depending on your internet speed." $DEFCOL
     echo -e $GREEN "You may be prompted to grant storage permissions..." $DEFCOL
     echo ""
     # If the user is using Termux on Android, install the required utilities and modules
@@ -95,6 +119,7 @@ if [ -d "/data/data/com.termux/files/usr/" ]; then
         cd $HOME
         git clone https://github.com/evildevill/instahack
         cd instahack
+        downloading_password_lists
         rm -rf /data/data/com.termux/files/usr/etc/tor/torrc
         cp torrc /data/data/com.termux/files/usr/etc/tor/torrc
         pip3 install -r requirements.txt
@@ -129,6 +154,7 @@ elif [[ "$operating_system" == *"Linux"* ]]; then
             sudo rm -rf /etc/tor/torrc
             sudo cp torrc /etc/tor/torrc
             pip3 install -r requirements.txt
+            downloading_password_lists
             sleep 2
             echo -e $GREEN "Setup completed successfully" $DEFCOL
             echo -e $GREEN "Open new terminal and type $RED tor $GREEN then hit enter" $DEFCOL
