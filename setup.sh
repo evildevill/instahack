@@ -22,7 +22,11 @@ detect_os() {
 
 # Function to check the Linux distribution
 check_distro() {
-    cat /etc/*-release | grep '^ID='
+    if [ -f /etc/os-release ]; then
+        cat /etc/os-release | grep '^ID='
+    else
+        echo "android"
+    fi
 }
 
 # Function to install the required utilities and modules
@@ -103,7 +107,7 @@ if [ "$operating_system" = "Linux" ]; then
     else
         echo -e $GREEN "Sorry, this Linux distribution is not supported" $DEFCOL
     fi
-elif [ -d "/data/data/com.termux/files/usr/" ]; then
+elif [ "$linux_distro" = "android" ] || [ -d "/data/data/com.termux/files/usr/" ]; then
     # If the user is using Termux on Android, install the required utilities and modules
     clear
     echo ""
