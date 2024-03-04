@@ -10,6 +10,7 @@ currently being supported with bug fixes.
 | 4.5.1   | :white_check_mark: |
 | 4.5.2   | :white_check_mark: |
 | 4.5.3   | :white_check_mark: |
+| 4.5.4   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
