@@ -2,7 +2,10 @@
 # The setup script for the InstaHack tool. This is a python script that automates the installation of the
 # required utilities and modules, and all the important required dependencies for the tool.
 
-# Author : Waseem Akram (https://github.com/evildevill/)
+# Author  : Waseem Akram 
+# Github  : https://github.com/evildevill/
+# Website : https://hackerwasii.com
+# Created on : May 04, 2020
 # Modified on : March 04, 2024
 
 # This file is part of InstaHack.
