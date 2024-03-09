@@ -26,16 +26,21 @@ DEFCOL="\033[00m"
 # The main script starts here
 clear
 echo -e "${YELLOW}
-            __   __     _____   __       __       _____    
-           /\_\ /_/\  /\_____\ /\_\     /\_\     ) ___ (   
-          ( ( (_) ) )( (_____/( ( (    ( ( (    / /\_/\ \  
-           \ \___/ /  \ \__\   \ \_\    \ \_\  / /_/ (_\ \ 
-           / / _ \ \  / /__/_  / / /__  / / /__\ \ )_/ / / 
-          ( (_( )_) )( (_____\( (_____(( (_____(\ \/_\/ /  
-           \/_/ \_\/  \/_____/ \/_____/ \/_____/ )_____( ${DEFCOL}\n"
-echo -e "                             ${BLUE}About us${DEFCOL}\n"
-echo -e "       🙏 Hey, there I am MUHAMMAD WASIM AKRAM (W A S I), i made this tool
-  to penetrate password strength In termux, so i hope guys you
-                             liked it. 😘\n"
-echo -e "                  ${GREEN}Our youtube channel${DEFCOL} : ${YELLOW}Hacker wasi${DEFCOL}\n"
+  __   __     _____   __       __       _____    
+ /\_\ /_/\  /\_____\ /\_\     /\_\     ) ___ (   
+( ( (_) ) )( (_____/( ( (    ( ( (    / /\_/\ \  
+ \ \___/ /  \ \__\   \ \_\    \ \_\  / /_/ (_\ \ 
+ / / _ \ \  / /__/_  / / /__  / / /__\ \ )_/ / / 
+( (_( )_) )( (_____\( (_____(( (_____(\ \/_\/ /  
+ \/_/ \_\/  \/_____/ \/_____/ \/_____/ )_____( ${DEFCOL}\n"
+echo -e "${BLUE}About Me${DEFCOL}\n"
+echo -e "${YELLOW}Hii, I am Muhammad Waseem Aram ${BLUE}(Wasii)${YELLOW}. I created this tool
+to test password strength in Termux. This tool is designed to help
+improve security by identifying weak passwords and promoting
+stronger password practices. I hope you find it useful.\n"
+echo -e "${GREEN}My YouTube channel${DEFCOL} : ${YELLOW}Hackerwasii${DEFCOL}"
+echo -e "${GREEN}GitHub${DEFCOL} : ${YELLOW}https://github.com/evildevill/instahack${DEFCOL}"
+echo -e "${GREEN}Created on${DEFCOL} : ${YELLOW}June 28, 2020${DEFCOL}"
+echo -e "${GREEN}Last modified on${DEFCOL} : ${YELLOW}March 09, 2024${DEFCOL}"
+echo -e "${GREEN}Last modified by${DEFCOL} : ${YELLOW}Waseem Akram👻💙${DEFCOL}"
 sleep 2
