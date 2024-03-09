@@ -1,19 +1,16 @@
 #!/bin/bash
 # update.sh - InstaHack
 #
-# The shell / bash script that updates the InstaHack tool that had already been set up in your computer system. It just fetches te newer version of the project's repository at the github mirror (https://github.com/evildevill/instahack/). The script can be launched directly, but the codes are written in such a way that the script can only be used inside the main script file for the tool i.e., 'instahack.sh'.
-#
-# Author : Wasim Akram (https://github.com/evildevill/)
+# Author : Waseem Akram (https://github.com/evildevill/)
 # Created on : June 28, 2020
 #
-# Last modified by : Rishav Das (https://github.com/rdofficial/)
-# Last modified on : May 10, 2021
+# Last modified by : Waseem Akram (https://github.com/evildevill/)
+# Last modified on : March 09, 2024
 #
 # Changes made in the last modification :
 # 1. Adding commented docs and more comments to the script's code in order to make it more clean and easily readable to the programmers and other hackers.
 # 2. Removing some errors and also adding more proper output and specially the colored output system.
 # 3. Removed the dependencies like 'lolcat' and used the ANSII color codes instead.
-#
 
 # Defining the ANSII color code variables for colored output
 RED="\033[91m"
@@ -43,4 +40,4 @@ echo -e "${GREEN}GitHub${DEFCOL} : ${YELLOW}https://github.com/evildevill/instah
 echo -e "${GREEN}Created on${DEFCOL} : ${YELLOW}June 28, 2020${DEFCOL}"
 echo -e "${GREEN}Last modified on${DEFCOL} : ${YELLOW}March 09, 2024${DEFCOL}"
 echo -e "${GREEN}Last modified by${DEFCOL} : ${YELLOW}Waseem Akram👻💙${DEFCOL}"
-sleep 2
+sleep 5
