@@ -3,7 +3,7 @@
 </p>
 <p align="center">
 <a href="https://youtube.com/Hackerwasii"><img title="Made in Pakistan" src="https://img.shields.io/badge/Tool-instahack-green.svg"></a>
-<a href="https://guthub.com/evildevill/instahack"><img title="Version" src="https://img.shields.io/badge/Version-4.3.0-green.svg?style=flat-square"></a>
+<a href="https://guthub.com/evildevill/instahack"><img title="Version" src="https://img.shields.io/badge/Version-4.5.6-green.svg?style=flat-square"></a>
 <a href="https://github.com/evildevill"><img title="Maintainence" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=HackerWaSi" alt="visitor badge"/>
 </p>
