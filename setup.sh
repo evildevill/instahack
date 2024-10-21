@@ -6,7 +6,7 @@
 # Github  : https://github.com/evildevill/
 # Website : https://hackerwasii.com
 # Created on : May 04, 2020
-# Modified on : March 04, 2024
+# Modified on : October 04, 2024
 
 # This file is part of InstaHack.
 # Defining the ANSII color code variables for colored output
@@ -32,7 +32,7 @@ check_distro() {
     fi
 }
 
-# Function to install the required utilities and modules
+# Function to install the required utilities and modules for Kali Linux
 install_utilities_and_modules_kali() {
     sudo apt-get install python -y >/dev/null 2>&1
     sudo apt-get install git -y >/dev/null 2>&1
@@ -40,6 +40,18 @@ install_utilities_and_modules_kali() {
     sudo apt-get install curl -y >/dev/null 2>&1
     pip3 install lolcat -y >/dev/null 2>&1
     sudo apt install tor -y >/dev/null 2>&1
+}
+
+# Function to install the required utilities and modules for Ubuntu
+install_utilities_and_modules_ubuntu() {
+    sudo apt-get update -y >/dev/null 2>&1
+    sudo apt-get install python3 -y >/dev/null 2>&1
+    sudo apt-get install git -y >/dev/null 2>&1
+    sudo apt-get install wget -y >/dev/null 2>&1
+    sudo apt-get install curl -y >/dev/null 2>&1
+    sudo apt-get install tor -y >/dev/null 2>&1
+    pip3 install lolcat >/dev/null 2>&1
+    sudo apt-get install python3-pip -y >/dev/null 2>&1
 }
 
 # Function to add a directory to the PATH if it's not already there
@@ -134,7 +146,6 @@ elif [[ "$operating_system" == *"Linux"* ]]; then
     linux_distro=$(check_distro)
     if [[ "$linux_distro" == *"kali"* ]]; then
         # If the user is using Kali Linux, install the required utilities and modules
-        linux_distro=$(check_distro)
         clear
         echo ""
         echo -e $GREEN "Detected Kali Linux. Installing the required utilities and modules..." $DEFCOL
@@ -161,11 +172,37 @@ elif [[ "$operating_system" == *"Linux"* ]]; then
             sleep 5
             bash instahack.sh
          fi
+    elif [[ "$linux_distro" == *"ubuntu"* ]]; then
+        # If the user is using Ubuntu, install the required utilities and modules
+        clear
+        echo ""
+        echo -e $GREEN "Detected Ubuntu Linux. Installing the required utilities and modules..." $DEFCOL
+        echo -e $GREEN "Please wait This may take a moment depending on your internet speed..." $DEFCOL
+        echo -e $GREEN "You may be prompted to enter your password..." $DEFCOL
+        echo ""
+        sleep 1
+        install_utilities_and_modules_ubuntu
+        add_to_path
+        if [ -d "instahack" ]; then
+            cd instahack
+            sleep 2
+            bash instahack.sh
+        else
+            git clone https://github.com/evildevill/instahack.git
+            cd instahack
+            sudo rm -rf /etc/tor/torrc
+            sudo cp torrc /etc/tor/torrc
+            pip3 install -r requirements.txt
+            downloading_password_lists
+            sleep 2
+            echo -e $GREEN "Setup completed successfully" $DEFCOL
+            echo -e $GREEN "Open new terminal and type $RED tor $GREEN then hit enter" $DEFCOL
+            sleep 5
+            bash instahack.sh
+         fi
     else
-        echo -e $GREEN "Sorry, this Linux distribution is not supported" $DEFCOL
+        echo -e $RED "Unknown Linux distribution. This script only supports Kali Linux, Ubuntu, and Termux." $DEFCOL
     fi
 else
-    # If the user's operating system does not match any of the above options, print a message
-    echo -e $GREEN "Sorry, this operating system is not supported" $DEFCOL
+    echo -e $RED "This operating system is not supported by the script." $DEFCOL
 fi
-# End of the script
