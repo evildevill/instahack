@@ -98,11 +98,11 @@ wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && b
 
 [![Messenger](https://img.shields.io/badge/Messenger-Chat-blue?style=for-the-badge&logo=messenger)](https://m.me/hackerwasiii)
 [![Instagram](https://img.shields.io/badge/Instagram-Follow-red?style=for-the-badge&logo=instagram)](https://instagram.com/wasii_254)
-[![YouTube](https://img.shields.io/badge/YouTube-HackerWasii-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@theparadoox)
+[![YouTube](https://img.shields.io/badge/YouTube-HackerWasii-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@hackerwasii)
 [![Website](https://img.shields.io/badge/Website-Visit-yellow?style=for-the-badge&logo=blogger)](https://hackerwasii.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/hackerwasii)
 [![Telegram](https://img.shields.io/badge/Telegram-Channel-blue?style=for-the-badge&logo=telegram)](https://t.me/blckspidr)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Message-green?style=for-the-badge&logo=whatsapp)](https://wa.me/923137119351)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Message-green?style=for-the-badge&logo=whatsapp)](https://wa.me/+12048132846)
 
 ---
 
