@@ -112,6 +112,16 @@ wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && b
 
 ---
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=evildevill%2Finstahack&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=evildevill/instahack&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=evildevill/instahack&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=evildevill/instahack&type=date&legend=top-left" />
+ </picture>
+</a>
+
 ## ⚠️ Legal Disclaimer
 
 > This project is created solely for cybersecurity awareness, penetration testing training, and educational use. Any misuse of this tool is **strictly prohibited**. The developer is not responsible for any consequences arising from the use or misuse of this project.
