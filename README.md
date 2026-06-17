@@ -114,13 +114,9 @@ wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && b
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=evildevill%2Finstahack&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=evildevill/instahack&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=evildevill/instahack&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=evildevill/instahack&type=date&legend=top-left" />
- </picture>
-</a>
+## Star History
+
+[![Star History Chart](https://api.star-history.com/chart?repos=evildevill/instahack&type=date&legend=top-left)](https://www.star-history.com/?repos=evildevill%2Finstahack&type=date&legend=top-left)
 
 ## ⚠️ Legal Disclaimer
 
