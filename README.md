@@ -116,7 +116,7 @@ wget https://raw.githubusercontent.com/evildevill/instahack/master/setup.sh && b
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/chart?repos=evildevill/instahack&type=date&legend=top-left)](https://www.star-history.com/?repos=evildevill%2Finstahack&type=date&legend=top-left)
+[![Star History Chart](https://star-history.dera.page/svg?repos=evildevill/instahack&type=date&legend=top-left)](https://star-history.dera.page/#evildevill/instahack&type=date&legend=top-left)
 
 ## ⚠️ Legal Disclaimer
 
